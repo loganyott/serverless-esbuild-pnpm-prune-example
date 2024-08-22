@@ -1,0 +1,20 @@
+service: aws-node-project
+frameworkVersion: '3'
+
+plugins:
+  - serverless-esbuild
+
+custom:
+  esbuild:
+    packager: pnpm
+    keepOutputDirectory: true
+    external:
+      - mysql
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  function1:
+    handler: index.handler

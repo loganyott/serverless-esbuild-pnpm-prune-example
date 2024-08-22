@@ -1,0 +1,13 @@
+{
+	"name": "package-one",
+	"scripts": {
+		"build": "sls package"
+	},
+	"devDependencies": {
+		"serverless": "~3",
+		"serverless-esbuild": "^1.52.1"
+	},
+	"dependencies": {
+		"mysql": "^2.18.1"
+	}
+}
